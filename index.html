@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+    <script src="index.js"></script>
+    <script src="cursorevent.js"></script>
+    <title>Virtual Comic Store</title>
+
+</head>
+<body>
+    <a-scene>
+        <a-text position="-4 5.6 -5" text="font:exo2bold;color:red;value:Vritual Comics Store;width:20" ></a-text>
+        <a-entity id="container" position="0" mycursor store></a-entity>
+        <a-box id="box" position="0 1 -7" scale="2 2 2" visible="false"></a-box>
+
+        <a-camera>
+            <a-ring id="cursor" cursor="" position="0 0 -2" radius-inner="1" radius-outer="1.4" color="green" scale="0.04 0.04 0.04"></a-ring>
+        </a-camera>
+    </a-scene>
+</body>
+</html>
